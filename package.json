@@ -1,0 +1,11 @@
+{
+    "name": "your-project-name",
+    "version": "1.0.0",
+    "scripts": {
+        "build:css": "tailwindcss -i ./style.css -o ./output.css --watch"
+    },
+    "dependencies": {
+        "tailwindcss": "^2.2.19",
+        "your-project-name": "file:"
+    }
+}

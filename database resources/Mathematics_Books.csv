@@ -1,0 +1,40 @@
+Title,Type,Author,Publisher,ISBN,P_Year,Access_Type
+Calculus,P,James Stewart,Cengage Learning,9781285740621,2015,O
+Linear Algebra and Its Applications,E,David C. Lay,Pearson,9780321982384,2015,S
+Advanced Engineering Mathematics,P,Erwin Kreyszig,Wiley,9780470458365,2011,O
+Introduction to Probability,E,"Dimitri P. Bertsekas, John N. Tsitsiklis",Athena Scientific,9781886529236,2008,S
+Discrete Mathematics and Its Applications,P,Kenneth H. Rosen,McGraw-Hill Education,9780073383094,2012,O
+Complex Analysis,P,"Elias M. Stein, Rami Shakarchi",Princeton University Press,9780691113852,2003,O
+Abstract Algebra,E,"David S. Dummit, Richard M. Foote",Wiley,9780471433347,2003,S
+Mathematical Statistics with Applications,P,"Dennis Wackerly, William Mendenhall, Richard L. Scheaffer",Cengage Learning,9780495110811,2007,O
+Real Analysis,P,"Halsey Royden, Patrick Fitzpatrick",Pearson,9780321798305,2010,O
+Topology,E,James R. Munkres,Pearson,9780134689517,2017,S
+Numerical Analysis,P,"Richard L. Burden, J. Douglas Faires",Cengage Learning,9781305253666,2015,O
+A First Course in Abstract Algebra,E,John B. Fraleigh,Pearson,9780321765871,2013,S
+Differential Equations with Boundary-Value Problems,P,"Dennis G. Zill, Warren S. Wright",Cengage Learning,9781133491923,2012,O
+Algebra,P,Michael Artin,Pearson,9780132413770,2010,O
+Partial Differential Equations,E,Lawrence C. Evans,American Mathematical Society,9780821849743,2010,S
+Linear Algebra Done Right,P,Sheldon Axler,Springer,9783319110790,2014,O
+Introduction to Linear Algebra,E,Gilbert Strang,Wellesley-Cambridge Press,9780980232776,2009,S
+Mathematical Proofs: A Transition to Advanced Mathematics,P,"Gary Chartrand, Albert D. Polimeni, Ping Zhang",Pearson,9780321797094,2012,O
+Introduction to Topology,P,Bert Mendelson,Dover Publications,9780486663524,1990,O
+Principles of Mathematical Analysis,E,Walter Rudin,McGraw-Hill Education,9780070542357,1976,S
+Calculus: Early Transcendentals,P,James Stewart,Cengage Learning,9781305270335,2016,O
+Elementary Number Theory,E,David M. Burton,McGraw-Hill Education,9780073383146,2010,S
+Combinatorics and Graph Theory,P,"John M. Harris, Jeffry L. Hirst, Michael J. Mossinghoff",Springer,9780387797106,2008,O
+An Introduction to the Theory of Numbers,E,"G.H. Hardy, E.M. Wright",Oxford University Press,9780199219865,2008,S
+Introduction to Real Analysis,P,"Robert G. Bartle, Donald R. Sherbert",Wiley,9780471433316,2011,O
+Advanced Calculus,E,Patrick M. Fitzpatrick,American Mathematical Society,9780821847916,2009,S
+Probability and Statistics,P,"Morris H. DeGroot, Mark J. Schervish",Pearson,9780321500465,2011,O
+Applied Linear Algebra,E,"Peter J. Olver, Chehrzad Shakiban",Springer,9783319910413,2018,S
+Introduction to Algorithms,P,"Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",MIT Press,9780262033848,2009,O
+Graph Theory with Applications,P,"J.A. Bondy, U.S.R. Murty",North Holland,9780444527293,2008,O
+Measure Theory and Integration,E,M.M. Rao,CRC Press,9780824786915,2018,S
+An Introduction to Statistical Learning,P,"Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani",Springer,9781461471370,2013,O
+Differential Geometry of Curves and Surfaces,E,Manfredo P. do Carmo,Dover Publications,9780486432335,2016,S
+Abstract Algebra: Theory and Applications,P,Thomas W. Judson,Orthogonal Publishing L3C,9781944325053,2018,O
+Introduction to Functional Analysis,E,"A.E. Taylor, D.C. Lay",Wiley,9780471628873,2008,S
+Convex Optimization,P,"Stephen Boyd, Lieven Vandenberghe",Cambridge University Press,9780521833783,2004,O
+Introduction to the Finite Element Method,E,Ciaran O. Murphy,McGraw-Hill Education,9780071375557,2005,S
+Mathematics for Machine Learning,P,"Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong",Cambridge University Press,9781108455145,2020,O
+Elementary Linear Algebra,E,"Howard Anton, Chris Rorres",Wiley,9780470561577,2010,S

@@ -1,0 +1,51 @@
+Title,Type,Author,Publisher,ISBN,P_Year,Access_Type
+Introduction to Medicine,E,Dr. John Smith,Health Press,978-1234567890,2022,S
+Advanced Anatomy,P,Dr. Jane Doe,Med Books,978-0987654321,2021,O
+Clinical Pathology,E,Dr. Emily Clark,Medical Insights,978-1122334455,2023,S
+Fundamentals of Health Sciences,P,Dr. Michael Brown,Science Publishers,978-2233445566,2020,O
+Medical Microbiology,E,Dr. Laura Wilson,Health Books,978-3344556677,2024,S
+Pharmacology Basics,P,Dr. James Taylor,Pharma Publications,978-4455667788,2022,O
+Human Physiology,E,Dr. Linda Miller,Body Science,978-5566778899,2021,S
+Medical Genetics,P,Dr. Robert Davis,Gene Publishers,978-6677889900,2023,O
+Health Policy,E,Dr. Patricia Garcia,Policy Press,978-7788990011,2022,S
+Medical Ethics,P,Dr. Charles Martinez,Ethics Publications,978-8899001122,2020,O
+Biochemistry for Health,E,Dr. Mary Anderson,BioHealth,978-9900112233,2021,S
+Epidemiology Overview,P,Dr. William Wilson,Epidemiology Insights,978-0011223344,2023,O
+Nursing Fundamentals,E,Dr. Barbara Robinson,Nursing Books,978-1122334455,2022,S
+Diagnostic Imaging,P,Dr. Richard Thompson,Imaging Solutions,978-2233445566,2021,O
+Public Health,E,Dr. Elizabeth Johnson,Public Health Press,978-3344556677,2023,S
+Nutrition Science,P,Dr. David Moore,Nutrition Publications,978-4455667788,2020,O
+Medical Research Methods,E,Dr. Jennifer Lee,Research Press,978-5566778899,2021,S
+Pharmacotherapy,P,Dr. Joseph White,Therapy Publishers,978-6677889900,2023,O
+Geriatrics,E,Dr. Nancy Harris,Geriatric Press,978-7788990011,2024,S
+Pediatrics,P,Dr. Daniel Young,Pediatric Insights,978-8899001122,2022,O
+Surgical Techniques,E,Dr. Margaret Walker,Surgical Solutions,978-9900112233,2021,S
+Mental Health,P,Dr. Thomas King,Mental Health Press,978-0011223344,2020,O
+Tropical Medicine,E,Dr. Jessica Wright,Tropical Health,978-1122334455,2022,S
+Respiratory Medicine,P,Dr. Mark Scott,Respiratory Press,978-2233445566,2021,O
+Cardiology Essentials,E,Dr. Sarah Adams,Cardio Books,978-3344556677,2023,S
+Oncology Principles,P,Dr. Andrew Turner,Oncology Press,978-4455667788,2020,O
+Endocrinology,E,Dr. Karen Mitchell,Endo Publishers,978-5566778899,2021,S
+Neuroscience,P,Dr. Steven Nelson,Neuro Insights,978-6677889900,2023,O
+Orthopedics,E,Dr. Lisa Carter,Ortho Publishers,978-7788990011,2024,S
+Rheumatology,P,Dr. Paul Roberts,Rheuma Press,978-8899001122,2022,O
+Urology,E,Dr. Helen Perez,Uro Books,978-9900112233,2021,S
+Dermatology,P,Dr. Brian Evans,Dermatology Press,978-0011223344,2020,O
+Ophthalmology,E,Dr. Susan Green,Ophthal Publications,978-1122334455,2023,S
+Obstetrics and Gynecology,P,Dr. George Hall,Obstetrics Press,978-2233445566,2021,O
+Emergency Medicine,E,Dr. Michelle Allen,Emergency Insights,978-3344556677,2024,S
+Internal Medicine,P,Dr. Timothy King,Internal Medicine Press,978-4455667788,2022,O
+Hematology,E,Dr. Laura Scott,Hematology Publications,978-5566778899,2023,S
+Immunology,P,Dr. Gary Adams,Immuno Press,978-6677889900,2020,O
+Infectious Diseases,E,Dr. Kimberly Nelson,Infectious Insights,978-7788990011,2021,S
+Renal Medicine,P,Dr. Joshua Collins,Renal Books,978-8899001122,2024,O
+Gastroenterology,E,Dr. Angela Campbell,Gastro Press,978-9900112233,2022,S
+Pain Management,P,Dr. Ronald Harris,Pain Management Publishers,978-0011223344,2020,O
+Sports Medicine,E,Dr. Emily White,Sports Health,978-1122334455,2023,S
+Sleep Medicine,P,Dr. Jacob Martinez,Sleep Solutions,978-2233445566,2021,O
+Women’s Health,E,Dr. John Smith,Women’s Health Press,978-3344556677,2024,S
+Palliative Care,P,Dr. Jane Doe,Palliative Insights,978-4455667788,2022,O
+Environmental Health,E,Dr. Emily Clark,EnviroHealth,978-5566778899,2023,S
+Clinical Nutrition,P,Dr. Michael Brown,Clinical Nutrition Books,978-6677889900,2020,O
+Medical Law,E,Dr. Laura Wilson,Law and Medicine,978-7788990011,2021,S
+Healthcare Management,P,Dr. James Taylor,Healthcare Management Press,978-8899001122,2024,O
