@@ -1,0 +1,95 @@
+$primary-color: #2d6cdf;
+$background: #f5f7fa;
+$text-color: #333;
+$border-radius: 8px;
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: $background;
+  color: $text-color;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: $primary-color;
+  margin-bottom: 2rem;
+}
+
+.search-group {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 2px solid lighten($primary-color, 20%);
+    border-radius: $border-radius;
+    outline: none;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+    }
+  }
+
+  .suggestion-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 $border-radius $border-radius;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+
+    li {
+      padding: 10px 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+}
+
+.results-container {
+  margin-top: 2rem;
+
+  .book {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: $border-radius;
+    border-left: 5px solid $primary-color;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 4px 0;
+    }
+
+    strong {
+      color: darken($primary-color, 15%);
+    }
+  }
+}

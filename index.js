@@ -1,74 +1,60 @@
-$(document).ready(function() {
-    
-    $('#Search').on('input', function() {
-        let query = $(this).val();
+const SUPABASE_URL = 'https://tobnbzrdqoburyjzjrlp.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRvYm5ienJkcW9idXJ5anpqcmxwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwMTA0MzgsImV4cCI6MjA2NDU4NjQzOH0.efsqjWnBLCZ7exnGE5rLzNXpYgLBuSw1D7haW8I8mk0';
 
-        if (query.length >= 1) {
-            $.ajax({
-                url: "ajax.php",
-                method: "POST",
-                dataType: "json",
-                data: { query: query },
-                success: function(data) {
-                    if (data.length > 0) {
-                        let suggestions = '';
-                        $.each(data, function(index, suggestion) {
-                            suggestions += '<li>' + suggestion + '</li>';
-                        });
-                        $('#suggestions').fadeIn().html(suggestions);
-                    } else {
-                        $('#suggestions').fadeOut();
-                    }
-                },
-                error: function() {
-                    $('#suggestions').fadeOut();
-                }
-            });
-        } else {
-            $('#suggestions').fadeOut();
-        }
-    });
+const headers = {
+  apikey: SUPABASE_KEY,
+  Authorization: `Bearer ${SUPABASE_KEY}`
+};
 
-    $(document).on('click', '#suggestions li', function() {
-        $('#Search').val($(this).text());
-        $('#suggestions').fadeOut();
-    });
+const searchBox = document.getElementById('searchBox');
+const suggestionList = document.getElementById('suggestions');
+const results = document.getElementById('results');
 
-    $('#searchBtn').click(function() {
-        let query = $('#Search').val();
+searchBox.addEventListener('input', async () => {
+  const query = searchBox.value.trim();
 
-        if (query.length >= 1) {
-            $.ajax({
-                url: "search.php",
-                method: "GET",
-                dataType: "json",
-                data: { search: query },
-                success: function(data) {
-                    if (data.message) {
-                        $('#results').html(data.message).fadeIn();
-                    } else {
-                        let resultHtml = '<ul>';
-                        $.each(data, function(index, book) {
-                            resultHtml += '<li>';
-                            resultHtml += '<strong>Title:</strong> ' + book.Title + '<br>';
-                            resultHtml += '<strong>Author:</strong> ' + book.Author + '<br>';
-                            resultHtml += '<strong>Publisher:</strong> ' + book.Publisher + '<br>';
-                            resultHtml += '<strong>ISBN:</strong> ' + book.ISBN + '<br>';
-                            resultHtml += '<strong>Published Year:</strong> ' + book.P_Year + '<br>';
-                            resultHtml += '<strong>Type:</strong> ' + book.Type + '<br>';
-                            resultHtml += '<strong>Access Type:</strong> ' + book.Access_Type + '<br>';
-                            resultHtml += '</li>';
-                        });
-                        resultHtml += '</ul>';
-                        $('#results').html(resultHtml).fadeIn();
-                    }
-                },
-                error: function() {
-                    $('#results').html("An error occurred while searching.").fadeIn();
-                }
-            });
-        } else {
-            $('#results').html("Enter Appropriate Book Title").fadeIn();
-        }
-    });
+  if (query.length < 1) {
+    suggestionList.innerHTML = '';
+    results.innerHTML = '';
+    return;
+  }
+
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/books?select=title&title=ilike.${query}*`, {
+    headers
+  });
+  const titles = await res.json();
+
+  if (titles.length > 0) {
+    suggestionList.innerHTML = titles.map(book =>
+      `<li onclick="selectSuggestion('${book.title.replace(/'/g, "\\'")}')">${book.title}</li>`
+    ).join('');
+  } else {
+    suggestionList.innerHTML = `<li>No matches found</li>`;
+  }
 });
+
+window.selectSuggestion = async (title) => {
+  searchBox.value = title;
+  suggestionList.innerHTML = '';
+
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/books?title=eq.${encodeURIComponent(title)}`, {
+    headers
+  });
+
+  const books = await res.json();
+  if (books.length > 0) {
+    results.innerHTML = books.map(book => `
+      <div class="book">
+        <h2>${book.title}</h2>
+        <p><strong>Author:</strong> ${book.author_name}</p>
+        <p><strong>Publisher:</strong> ${book.publisher}</p>
+        <p><strong>ISBN:</strong> ${book.isbn}</p>
+        <p><strong>Type:</strong> ${book.type === 'P' ? 'Print Book' : 'E-book'}</p>
+        <p><strong>Access:</strong> ${book.access_type === 'S' ? 'Subscribed' : 'Open'}</p>
+        <p><strong>Published Year:</strong> ${book.p_year}</p>
+      </div>
+    `).join('');
+  } else {
+    results.innerHTML = '<p>No details found for this book.</p>';
+  }
+};
