@@ -25,7 +25,7 @@ A real-time web application that allows users to search for books with live sugg
 
 1. Clone or download this repo.
 2. Open `index.html` in a browser for local testing.
-3. Deployed live at: [GitHub Pages URL]
+3. Deployed live at: [aravindhrdev.github.io/Liby/]
 
 ---
 
