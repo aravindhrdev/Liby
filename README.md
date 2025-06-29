@@ -52,5 +52,5 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-[Your Name] - [Your Email or Website]
+[Aravindh] - [aravindhr.developer@gmail.com]
 
